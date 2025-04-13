@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>Altamasoft | Jasa Pembuatan Web, Aplikasi Android</title>
+    <link rel="icon" href="{{ asset('assets/images/logo-altama.png') }}" type="image/png">
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">

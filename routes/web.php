@@ -7,17 +7,35 @@ Route::get('/', function () {
 });
 
 Route::get('/services', function () {
-    return view('sections.services');
+
+    $title = 'Services';
+
+    return view('sections.services', 
+    [
+        'title' => $title
+    ]);
 });
 
 Route::get('/portfolio', function () {
-    return view('sections.portfolio');
+    $title = 'Portfolio';
+    return view('sections.portfolio', 
+    [
+        'title' => $title
+    ]);
 });
 
 Route::get('/about', function () {
-    return view('sections.about');
+    $title = 'About';
+    return view('sections.about', 
+    [
+        'title' => $title
+    ]);
 });
 
 Route::get('/contact', function () {
-    return view('sections.contact');
+    $title = 'Contact';
+    return view('sections.contact', 
+    [
+        'title' => $title
+    ]);
 });

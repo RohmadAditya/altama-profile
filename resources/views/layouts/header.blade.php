@@ -9,10 +9,10 @@
                 <!-- ***** Logo End ***** -->
                 <!-- ***** Menu Start ***** -->
                 <ul class="nav">
-                    <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
-                    <li class="scroll-to-section"><a href="/services">Services</a></li>
-                    <li class="scroll-to-section"><a href="/portfolio">Portfolio</a></li>
-                    <li class="scroll-to-section"><a href="/about">About Us</a></li>
+                    <li class="scroll-to-section"><a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
+                    <li class="scroll-to-section"><a href="/services" class="{{ Request::is('services') ? 'active' : '' }}">Services</a></li>
+                    <li class="scroll-to-section"><a href="/portfolio" class="{{ Request::is('portfolio') ? 'active' : '' }}">Portfolio</a></li>
+                    <li class="scroll-to-section"><a href="/about" class="{{ Request::is('about') ? 'active' : '' }}">About Us</a></li>
                     <li class="scroll-to-section">
                         <div class="main-red-button"><a href="/contact">Contact Now</a></div>
                     </li>
