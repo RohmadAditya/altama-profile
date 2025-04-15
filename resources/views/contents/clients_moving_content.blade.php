@@ -8,18 +8,18 @@
     <div class="slider-wrapper">
         <div class="logo-slider">
             <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo 1" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Mandiri" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Astragraphia" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Indomaret" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo MedcoEnergi" />
+            <img src="{{ asset('assets/images/logo-pertamina.png') }}" alt="Logo Mandiri" />
+            <img src="{{ asset('assets/images/logo-RSSIKOD.png') }}" alt="Logo Astragraphia" />
+            <img src="{{ asset('assets/images/logo-assakinah.png') }}" alt="Logo Indomaret" />
+            <img src="{{ asset('assets/images/logo-smt.png') }}" alt="Logo MedcoEnergi" />
             <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Siloam" />
 
             <!-- Duplikat untuk efek loop -->
             <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo 1" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Mandiri" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Astragraphia" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Indomaret" />
-            <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo MedcoEnergi" />
+            <img src="{{ asset('assets/images/logo-pertamina.png') }}" alt="Logo Mandiri" />
+            <img src="{{ asset('assets/images/logo-RSSIKOD.png') }}" alt="Logo Astragraphia" />
+            <img src="{{ asset('assets/images/logo-assakinah.png') }}" alt="Logo Indomaret" />
+            <img src="{{ asset('assets/images/logo-smt.png') }}" alt="Logo MedcoEnergi" />
             <img src="{{ asset('assets/images/logo-bumn.png') }}" alt="Logo Siloam" />
         </div>
     </div>

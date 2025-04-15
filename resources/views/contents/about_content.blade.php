@@ -1,4 +1,4 @@
-<div id="about" class="about-us section">
+{{-- <div id="about" class="about-us section">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -58,4 +58,38 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
+
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Tentang Kami</h2>
+        <p>
+          PT Wahana Ekspresi Bersama Kreatif (WebKraf) adalah software consultant dan service company.
+          Kami merupakan perusahaan perangkat lunak yang berdomisili di Tangerang, Indonesia. Sejak 2015,
+          kami terus berdedikasi dalam mengembangkan berbagai bisnis dan perusahaan melalui inovasi di bidang Teknologi Informasi (TI).
+        </p>
+  
+        <hr />
+  
+        <h3>Visi</h3>
+        <p>
+          Menjadi konsultan dan penyedia solusi IT yang berkualitas, berintegritas, dan secara profesional
+          membantu klien dalam mewujudkan setiap harapan, serta menjadi rekan diskusi klien di bidang IT.
+        </p>
+  
+        <h3>Misi</h3>
+        <ol>
+          <li>Memberikan solusi TI yang kreatif dan tepat sasaran.</li>
+          <li>Bekerja secara efektif.</li>
+          <li>Menjaga kepercayaan dan membangun relasi yang baik dengan klien.</li>
+        </ol>
+        
+      </div>
+  
+      <div class="about-image">
+        <img src="{{ asset('assets/images/big-blog-thumb.jpg') }}" alt="Team Work" />
+      </div>
+    </div>
+  </section>
+  
