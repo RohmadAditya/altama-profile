@@ -25,6 +25,35 @@ Table of contents
 --------------------------------------------- */
 /* 
 ---------------------------------------------
+reusable style css
+--------------------------------------------- 
+*/
+:root {
+  /* color */
+  --primary-color: #03a4ed;
+  --secondary-color: #b5179e;
+
+  /* font weight */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* font size */
+  --fs-xs: 0.75rem;   /* 12px */
+  --fs-sm: 0.875rem;  /* 14px */
+  --fs-base: 1rem;    /* 16px */
+  --fs-md: 1.125rem;  /* 18px */
+  --fs-lg: 1.25rem;   /* 20px */
+  --fs-xl: 1.5rem;    /* 24px */
+  --fs-2xl: 2rem;     /* 32px */
+  --fs-3xl: 3rem;     /* 48px */
+}
+/* 
+---------------------------------------------
 font & reset css
 --------------------------------------------- 
 */
@@ -104,7 +133,7 @@ header, nav, section, article, aside, footer, hgroup {
 
 html, body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   background-color: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -147,12 +176,12 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: var(--primary-color);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03a4ed;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -180,7 +209,7 @@ body {
   font-size: 30px;
   text-transform: capitalize;
   color: #2a2a2a;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   letter-spacing: 0.25px;
   position: relative;
   z-index: 2;
@@ -189,7 +218,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #03a4ed;
+  color: var(--primary-color);
 }
 
 .section-heading h2 span {
@@ -198,9 +227,9 @@ body {
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -210,9 +239,9 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #b5179e;
+  background-color: var(--secondary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -224,7 +253,7 @@ body {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fe3f40;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -284,7 +313,7 @@ header
   line-height: 100px;
   color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 2px;
   float: left;
@@ -296,7 +325,7 @@ header
 
 .header-area .main-nav .logo h4 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     text-transform: uppercase;
     color: #56b6e8;
     line-height: 100px;
@@ -308,7 +337,7 @@ header
 }
 
 .logo h4 span {
-  color: #b5179e;
+  color: var(--secondary-color);
 }
 
 .background-header .main-nav .logo h4 {
@@ -346,7 +375,7 @@ header
 .background-header .main-nav .nav li:last-child a {
   color: #fff !important;
   padding: 0px 20px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
@@ -356,7 +385,7 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   font-size: 15px;
   color: #2a2a2a;
   text-transform: capitalize;
@@ -376,18 +405,18 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #b5179e!important;
+  color: var(--secondary-color)!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #b5179e!important;
+  color: var(--secondary-color)!important;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -442,7 +471,7 @@ header
   transition: all 0.3s ease 0s;
   position: relative;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   border-bottom: 1px solid #eee;
 }
 
@@ -698,7 +727,7 @@ header
   }
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--fw-normal);
   }
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
@@ -869,24 +898,24 @@ Banner Style
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #b5179e;
+  color: var(--secondary-color);
   margin-bottom: 15px;
 }
 
 .main-banner .left-content h2 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   line-height: 72px;
 }
 
 .main-banner .left-content h2 em {
-  color: #03a4ed;
+  color: var(--primary-color);
   font-style: normal;
 }
 
 .main-banner .left-content h2 span {
-  color: #b5179e;
+  color: var(--secondary-color);
 }
 
 .main-banner .left-content p {
@@ -907,7 +936,7 @@ Banner Style
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   color: #fe3f40;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -920,7 +949,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   border-radius: 33px;
   border: none;
   outline: none;
@@ -928,7 +957,7 @@ Banner Style
   color: #fff;
   letter-spacing: 0.25px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
 }
 
 .main-banner .left-content form input::placeholder {
@@ -975,7 +1004,7 @@ About Us Style
 .about-us .services .item h4 {
   color: #fff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   margin-bottom: 12px;
 }
 
@@ -1018,8 +1047,8 @@ Services Style
   position: absolute;
   top: 0;
   font-size: 18px;
-  font-weight: 600;
-  color: #03a4ed;
+  font-weight: var(--fw-semibold);
+  color: var(--primary-color);
 }
 
 .our-services .first-bar span {
@@ -1036,7 +1065,7 @@ Services Style
 
 .our-services .progress-skill-bar h4 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin-bottom: 14px;
 }
@@ -1136,7 +1165,7 @@ Portfolio
 
 .our-portfolio .hidden-content h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1214,7 +1243,7 @@ Blog
   display: inline-block;
   font-size: 15px;
   color: #afafaf;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   margin-right: 20px;
 }
 
@@ -1230,7 +1259,7 @@ Blog
 
 .our-blog .left-image h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin: 20px 0px 15px 0px;
 }
@@ -1258,7 +1287,7 @@ Blog
 .our-blog .right-list .left-content span {
   font-size: 15px;
   color: #afafaf;
-  font-weight: 300;
+  font-weight: var(--fw-light);
 }
 
 .our-blog .right-list .left-content span i {
@@ -1269,7 +1298,7 @@ Blog
 
 .our-blog .right-list .left-content h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin: 20px 0px 15px 0px;
 }
@@ -1312,7 +1341,7 @@ contact
 
 .phone-info h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #fff;
 }
 
@@ -1333,7 +1362,7 @@ contact
 .phone-info h4 span a {
   color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 form#contact .contact-dec {
@@ -1362,7 +1391,7 @@ form#contact input {
   border: none;
   outline: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   color: #2a2a2a;
   padding: 0px 20px;
   margin-bottom: 20px;
@@ -1384,7 +1413,7 @@ form#contact textarea {
   border: none;
   outline: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   color: #2a2a2a;
   padding: 15px 20px;
   margin-bottom: 20px;
@@ -1396,9 +1425,9 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -1452,9 +1481,9 @@ footer p a {
 .footer-col h2,
 .footer-col h3 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   margin-bottom: 30px;
-  color: #b5179e;
+  color: var(--secondary-color);
 }
 
 .footer-col p {
@@ -1507,7 +1536,7 @@ footer p a {
 
 .contact-info i {
   margin-right: 8px;
-  color: #b5179e;
+  color: var(--secondary-color);
 }
 
 .footer-bottom {
