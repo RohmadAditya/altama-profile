@@ -9,12 +9,12 @@
                 <!-- ***** Logo End ***** -->
                 <!-- ***** Menu Start ***** -->
                 <ul class="nav">
-                    <li class="scroll-to-section"><a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Home</a></li>
-                    <li class="scroll-to-section"><a href="/services" class="{{ Request::is('services') ? 'active' : '' }}">Services</a></li>
-                    <li class="scroll-to-section"><a href="/portfolio" class="{{ Request::is('portfolio') ? 'active' : '' }}">Portfolio</a></li>
-                    <li class="scroll-to-section"><a href="/about" class="{{ Request::is('about') ? 'active' : '' }}">About Us</a></li>
+                    <li class="scroll-to-section"><a href="/" class="{{ Request::is('/') ? 'active' : '' }}">Beranda</a></li>
+                    <li class="scroll-to-section"><a href="/services" class="{{ Request::is('services') ? 'active' : '' }}">Layanan</a></li>
+                    <li class="scroll-to-section"><a href="/portfolio" class="{{ Request::is('portfolio') ? 'active' : '' }}">Portofolio</a></li>
+                    <li class="scroll-to-section"><a href="/about" class="{{ Request::is('about') ? 'active' : '' }}">Tentang Kami</a></li>
                     <li class="scroll-to-section">
-                        <div class="main-red-button"><a href="/contact">Contact Now</a></div>
+                        <div class="main-red-button"><a href="/contact">Hubungi Kami</a></div>
                     </li>
                     {{-- <li class="scroll-to-section"><a href="#blog">Blog</a></li> --}}
                     {{-- <li class="scroll-to-section"><a href="#contact">Message Us</a></li> --}}

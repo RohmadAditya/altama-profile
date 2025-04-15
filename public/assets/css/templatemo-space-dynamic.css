@@ -25,6 +25,35 @@ Table of contents
 --------------------------------------------- */
 /* 
 ---------------------------------------------
+reusable style css
+--------------------------------------------- 
+*/
+:root {
+  /* color */
+  --primary-color: #03a4ed;
+  --secondary-color: #b5179e;
+
+  /* font weight */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* font size */
+  --fs-xs: 0.75rem;   /* 12px */
+  --fs-sm: 0.875rem;  /* 14px */
+  --fs-base: 1rem;    /* 16px */
+  --fs-md: 1.125rem;  /* 18px */
+  --fs-lg: 1.25rem;   /* 20px */
+  --fs-xl: 1.5rem;    /* 24px */
+  --fs-2xl: 2rem;     /* 32px */
+  --fs-3xl: 3rem;     /* 48px */
+}
+/* 
+---------------------------------------------
 font & reset css
 --------------------------------------------- 
 */
@@ -104,7 +133,7 @@ header, nav, section, article, aside, footer, hgroup {
 
 html, body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   background-color: #fff;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -147,12 +176,12 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: var(--primary-color);
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03a4ed;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -180,7 +209,7 @@ body {
   font-size: 30px;
   text-transform: capitalize;
   color: #2a2a2a;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   letter-spacing: 0.25px;
   position: relative;
   z-index: 2;
@@ -189,7 +218,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #03a4ed;
+  color: var(--primary-color);
 }
 
 .section-heading h2 span {
@@ -198,9 +227,9 @@ body {
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -210,9 +239,9 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #fe3f40;
+  background-color: var(--secondary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -224,7 +253,7 @@ body {
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fe3f40;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -284,7 +313,7 @@ header
   line-height: 100px;
   color: #fff;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   text-transform: uppercase;
   letter-spacing: 2px;
   float: left;
@@ -296,9 +325,9 @@ header
 
 .header-area .main-nav .logo h4 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--fw-bold);
     text-transform: uppercase;
-    color: #03a4ed;
+    color: #56b6e8;
     line-height: 100px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
@@ -308,7 +337,7 @@ header
 }
 
 .logo h4 span {
-  color: #fe3f40;
+  color: var(--secondary-color);
 }
 
 .background-header .main-nav .logo h4 {
@@ -346,7 +375,7 @@ header
 .background-header .main-nav .nav li:last-child a {
   color: #fff !important;
   padding: 0px 20px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
@@ -356,7 +385,7 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   font-size: 15px;
   color: #2a2a2a;
   text-transform: capitalize;
@@ -376,18 +405,18 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: var(--secondary-color)!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: var(--secondary-color)!important;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -442,7 +471,7 @@ header
   transition: all 0.3s ease 0s;
   position: relative;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   border-bottom: 1px solid #eee;
 }
 
@@ -698,7 +727,7 @@ header
   }
   .header-area .main-nav .nav li.submenu ul li a {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: var(--fw-normal);
   }
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
     width: 0px;
@@ -835,7 +864,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 126px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -869,24 +898,24 @@ Banner Style
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #fe3f40;
+  color: var(--secondary-color);
   margin-bottom: 15px;
 }
 
 .main-banner .left-content h2 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   line-height: 72px;
 }
 
 .main-banner .left-content h2 em {
-  color: #03a4ed;
+  color: var(--primary-color);
   font-style: normal;
 }
 
 .main-banner .left-content h2 span {
-  color: #fe3f40;
+  color: var(--secondary-color);
 }
 
 .main-banner .left-content p {
@@ -907,7 +936,7 @@ Banner Style
   display: inline-block;
   background-color: #fff;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   color: #fe3f40;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -920,7 +949,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   border-radius: 33px;
   border: none;
   outline: none;
@@ -928,7 +957,7 @@ Banner Style
   color: #fff;
   letter-spacing: 0.25px;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
 }
 
 .main-banner .left-content form input::placeholder {
@@ -948,7 +977,7 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/stacked-waves-haikei1.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -975,7 +1004,7 @@ About Us Style
 .about-us .services .item h4 {
   color: #fff;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   margin-bottom: 12px;
 }
 
@@ -1018,8 +1047,8 @@ Services Style
   position: absolute;
   top: 0;
   font-size: 18px;
-  font-weight: 600;
-  color: #03a4ed;
+  font-weight: var(--fw-semibold);
+  color: var(--primary-color);
 }
 
 .our-services .first-bar span {
@@ -1036,7 +1065,7 @@ Services Style
 
 .our-services .progress-skill-bar h4 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin-bottom: 14px;
 }
@@ -1136,7 +1165,7 @@ Portfolio
 
 .our-portfolio .hidden-content h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1214,7 +1243,7 @@ Blog
   display: inline-block;
   font-size: 15px;
   color: #afafaf;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   margin-right: 20px;
 }
 
@@ -1230,7 +1259,7 @@ Blog
 
 .our-blog .left-image h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin: 20px 0px 15px 0px;
 }
@@ -1258,7 +1287,7 @@ Blog
 .our-blog .right-list .left-content span {
   font-size: 15px;
   color: #afafaf;
-  font-weight: 300;
+  font-weight: var(--fw-light);
 }
 
 .our-blog .right-list .left-content span i {
@@ -1269,7 +1298,7 @@ Blog
 
 .our-blog .right-list .left-content h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #2a2a2a;
   margin: 20px 0px 15px 0px;
 }
@@ -1289,7 +1318,7 @@ contact
 
 .contact-us {
   padding: 160px 0px;
-  background-image: url(../images/contact-bg.png);
+  background-image: url(../images/stacked-waves-haikei4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1312,7 +1341,7 @@ contact
 
 .phone-info h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: var(--fw-bold);
   color: #fff;
 }
 
@@ -1333,7 +1362,7 @@ contact
 .phone-info h4 span a {
   color: #fff;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 form#contact .contact-dec {
@@ -1362,7 +1391,7 @@ form#contact input {
   border: none;
   outline: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   color: #2a2a2a;
   padding: 0px 20px;
   margin-bottom: 20px;
@@ -1384,7 +1413,7 @@ form#contact textarea {
   border: none;
   outline: none;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: var(--fw-light);
   color: #2a2a2a;
   padding: 15px 20px;
   margin-bottom: 20px;
@@ -1396,9 +1425,9 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: var(--primary-color);
   font-size: 15px;
-  font-weight: 400;
+  font-weight: var(--fw-normal);
   color: #fff;
   text-transform: capitalize;
   padding: 12px 25px;
@@ -1413,6 +1442,129 @@ form#contact button:hover {
   background-color: #fe3f40;
 }
 
+/* 
+---------------------------------------------
+CONTENTS/COMPONENTS Style
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+Clients Moving Content Style
+--------------------------------------------- 
+*/
+.clients-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.clients-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.clients-subtitle {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Scroll area dibuat lebih kecil */
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 70px;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.logo-slider img {
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-slider img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 
+---------------------------------------------
+Web Types Content Style
+--------------------------------------------- 
+*/
+
+.services-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  background: #f9f9fc;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 260px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-box:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 32px;
+  background: #edf0ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #6b7280;
+}
 
 /* 
 ---------------------------------------------
@@ -1420,14 +1572,109 @@ Footer Style
 --------------------------------------------- 
 */
 
-footer p {
+/* footer p {
   text-align: center;
   margin: 30px 0px 45px 0px;
 }
 
 footer p a {
   color: #fe3f40;
+} */
+
+.custom-footer {
+  background-color: #fafafa;
+  padding: 60px 30px 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.footer-col {
+  flex: 1 1 220px;
+}
+
+.footer-col h2,
+.footer-col h3 {
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+  margin-bottom: 30px;
+  color: var(--secondary-color);
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #000;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 50%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background: #fe3f40;
+  color: #fff;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: var(--secondary-color);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.footer-bottom span {
+  color: #56b6e8;
+}
+
 
 /* 
 ---------------------------------------------
