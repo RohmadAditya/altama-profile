@@ -1442,6 +1442,129 @@ form#contact button:hover {
   background-color: #fe3f40;
 }
 
+/* 
+---------------------------------------------
+CONTENTS/COMPONENTS Style
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+Clients Moving Content Style
+--------------------------------------------- 
+*/
+.clients-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.clients-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.clients-subtitle {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Scroll area dibuat lebih kecil */
+.slider-wrapper {
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 70px;
+  position: relative;
+}
+
+.logo-slider {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  will-change: transform;
+}
+
+.logo-slider img {
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-slider img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 
+---------------------------------------------
+Web Types Content Style
+--------------------------------------------- 
+*/
+
+.services-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-box {
+  background: #f9f9fc;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 260px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.service-box:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  font-size: 32px;
+  background: #edf0ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+
+.service-box p {
+  font-size: 14px;
+  color: #6b7280;
+}
 
 /* 
 ---------------------------------------------

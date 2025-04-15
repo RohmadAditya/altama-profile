@@ -41,3 +41,7 @@
       </div>
     </div>
   </div>
+
+  @include('contents.clients_moving_content')
+
+  @include('contents.web_types_content')
