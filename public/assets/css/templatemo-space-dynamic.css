@@ -210,7 +210,7 @@ body {
 
 .main-red-button a {
   display: inline-block;
-  background-color: #fe3f40;
+  background-color: #b5179e;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -298,7 +298,7 @@ header
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #03a4ed;
+    color: #56b6e8;
     line-height: 100px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
@@ -308,7 +308,7 @@ header
 }
 
 .logo h4 span {
-  color: #fe3f40;
+  color: #b5179e;
 }
 
 .background-header .main-nav .logo h4 {
@@ -376,12 +376,12 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #b5179e!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fe3f40!important;
+  color: #b5179e!important;
   opacity: 1;
 }
 
@@ -835,7 +835,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 126px 0px 120px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -869,7 +869,7 @@ Banner Style
 .main-banner .left-content h6 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #fe3f40;
+  color: #b5179e;
   margin-bottom: 15px;
 }
 
@@ -886,7 +886,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 span {
-  color: #fe3f40;
+  color: #b5179e;
 }
 
 .main-banner .left-content p {
@@ -948,7 +948,7 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/stacked-waves-haikei1.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1289,7 +1289,7 @@ contact
 
 .contact-us {
   padding: 160px 0px;
-  background-image: url(../images/contact-bg.png);
+  background-image: url(../images/stacked-waves-haikei4.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1454,7 +1454,7 @@ footer p a {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #fe3f40;
+  color: #b5179e;
 }
 
 .footer-col p {
@@ -1507,7 +1507,7 @@ footer p a {
 
 .contact-info i {
   margin-right: 8px;
-  color: #fe3f40;
+  color: #b5179e;
 }
 
 .footer-bottom {
@@ -1520,7 +1520,7 @@ footer p a {
 }
 
 .footer-bottom span {
-  color: #fe3f40;
+  color: #56b6e8;
 }
 
 
