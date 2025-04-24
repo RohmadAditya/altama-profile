@@ -48,6 +48,8 @@
   {{-- portfolio --}}
   @include('contents.portfolio_content')
 
+  {{-- cta --}}
+  @include('contents.cta_content')
 
   <!-- ***** Footer Area ***** -->
   <footer>

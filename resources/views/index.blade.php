@@ -81,7 +81,9 @@
   @include('contents.services_content')
 
   {{-- portofolio --}}
-  @include('contents.portfolio_content')
+  @include('contents.devmethod_content')
+
+  @include('contents.cta-mini_content')
 
   {{-- blog --}}
   {{-- @include('contents.blog_content') --}}

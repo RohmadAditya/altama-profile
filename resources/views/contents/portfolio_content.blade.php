@@ -1,65 +1,58 @@
-<div id="portfolio" class="our-portfolio section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <h2>See What Our Agency <em>Offers</em> &amp; What We <span>Provide</span></h2>
-          </div>
-        </div>
+<section class="portfolio-section">
+    <div class="portfolio-header">
+      <h2>Portfolio</h2>
+      <p>Kreasi kami dalam berteknologi.<br>Karya kami untuk berbagai segmen bisnis.</p>
+      <a href="#" class="btn-lihat">Lihat Lebih</a>
+    </div>
+  
+    <div class="portfolio-grid">
+      <!-- Card 1 -->
+      <div class="portfolio-item">
+        <img src="assets/images/danone-portfolio.png" alt="Danone">
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="hidden-content">
-                <h4>SEO Analysis</h4>
-                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-              <div class="hidden-content">
-                <h4>Website Reporting</h4>
-                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-              <div class="hidden-content">
-                <h4>Performance Tests</h4>
-                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <a href="#">
-            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-              <div class="hidden-content">
-                <h4>Data Analysis</h4>
-                <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
-              </div>
-              <div class="showed-content">
-                <img src="assets/images/portfolio-image.png" alt="">
-              </div>
-            </div>
-          </a>
+  
+      <!-- Card 2 -->
+      <div class="portfolio-item">
+        <img src="assets/images/danone-portfolio.png" alt="Alive">
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="portfolio-item overlay">
+        <img src="assets/images/danone-portfolio.png" alt="Adamar Background">
+        <div class="overlay-content">
+          <span class="project-tag">ERP Project</span>
+          <h3>Adamar</h3>
+          <p>
+            Kreasi kami dalam berteknologi bersama PT Multi Sinar Adamar.<br><br>
+            Perusahaan yang berkembang akan membutuhkan sebuah sistem untuk mengatur jalannya usaha secara terotomatisasi. Enterprise Resource Planning dibangun secara custom untuk Adamar agar pemilik bisnis dapat melakukan monitoring dan mengambil keputusan secara cepat.
+          </p>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="portfolio-grid">
+        <!-- Card 1 -->
+        <div class="portfolio-item">
+          <img src="assets/images/danone-portfolio.png" alt="Danone">
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="portfolio-item">
+          <img src="assets/images/danone-portfolio.png" alt="Alive">
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="portfolio-item overlay">
+          <img src="assets/images/danone-portfolio.png" alt="Adamar Background">
+          <div class="overlay-content">
+            <span class="project-tag">ERP Project</span>
+            <h3>Adamar</h3>
+            <p>
+              Kreasi kami dalam berteknologi bersama PT Multi Sinar Adamar.<br><br>
+              Perusahaan yang berkembang akan membutuhkan sebuah sistem untuk mengatur jalannya usaha secara terotomatisasi. Enterprise Resource Planning dibangun secara custom untuk Adamar agar pemilik bisnis dapat melakukan monitoring dan mengambil keputusan secara cepat.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+  
