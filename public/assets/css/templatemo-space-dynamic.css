@@ -31,7 +31,7 @@ reusable style css
 :root {
   /* color */
   --primary-color: #03a4ed;
-  --secondary-color: #b5179e;
+  --secondary-color: #5c5aab;
 
   /* font weight */
   --fw-light: 300;
@@ -972,7 +972,7 @@ About Us Style
 --------------------------------------------- 
 */
 
-#about {
+/* #about {
   margin-top: 120px;
 }
 
@@ -1010,6 +1010,96 @@ About Us Style
 
 .about-us .services .item p {
   color: #fff;
+} */
+.about-section {
+  background-color: #f9f9fc;
+  padding: 100px 20px 60px;
+  scroll-margin-top: 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1;
+  /* color: var(--text); */
+  padding-right: 20px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  /* color: var(--primary); */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.about-text hr {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 50px;
+  margin: 20px 0;
+}
+
+.about-text h3 {
+  font-size: 22px;
+  color: black;
+  margin-top: 30px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-text ol {
+  margin-left: 20px;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 1.8;
+  list-style-type: decimal;
+}
+
+.about-text strong {
+  color: black;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-image {
+    margin-top: 30px;
+  }
 }
 
 
@@ -1035,6 +1125,10 @@ Services Style
 .our-services .section-heading p {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.our-services .section-heading span {
+  color: var(--secondary-color);
 }
 
 .our-services .progress-skill-bar {
@@ -1081,7 +1175,7 @@ Services Style
 
 .our-services .progress-skill-bar .filled-bar {
   background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+  background: linear-gradient(105deg, var(--secondary-color) 0%, rgba(255,44,109,1) 100%);
   height: 6px;
   border-radius: 3px;
   margin-bottom: -6px;
@@ -1108,12 +1202,134 @@ Portfolio
 --------------------------------------------- 
 */
 
-.our-portfolio {
-  padding-top: 120px;
-  margin-top: 0px;
+.portfolio-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Arial', sans-serif;
+  margin-top: 75px;
 }
 
-.our-portfolio .section-heading h2 {
+.portfolio-header {
+  text-align: left;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.portfolio-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.portfolio-header p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.btn-lihat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 25px;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4));
+  color: white;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(3, 164, 237, 0.85); /* primary color overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.overlay-content h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.overlay-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.project-tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* Tambahkan ini ke bagian bawah CSS sebelumnya */
+
+.portfolio-item.overlay .overlay-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.portfolio-item.overlay:hover .overlay-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.portfolio-item.overlay img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item.overlay:hover img {
+  transform: scale(1.05);
+}
+
+
+
+.devmethod {
+  padding-top: 120px;
+  margin-top: 0px;
+  margin-bottom: 125px;
+}
+
+.devmethod .section-heading h2 {
   text-align: center;
   margin: 0px 90px 0px 90px;
   margin-bottom: 120px;
@@ -1121,23 +1337,27 @@ Portfolio
   z-index: 1;
 }
 
-.our-portfolio .item {
+.devmethod .section-heading span {
+  color: var(--secondary-color);
+}
+
+.devmethod .item {
   position: relative;
 }
 
-.our-portfolio .item:hover .hidden-content {
+.devmethod .item:hover .hidden-content {
   top: -100px;
   opacity: 1;
   visibility: visible;
 }
 
-.our-portfolio .item:hover .showed-content {
+.devmethod .item:hover .showed-content {
   top: 90px;
 }
 
-.our-portfolio .hidden-content {
-  background: rgb(255,77,30);
-  background: linear-gradient(105deg, rgba(255,77,30,1) 0%, rgba(255,44,109,1) 100%);
+.devmethod .hidden-content {
+  background: var(--secondary-color);
+  background: linear-gradient(105deg, var(--secondary-color) 0%, var(--primary-color) 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -1149,11 +1369,11 @@ Portfolio
   transition: all 0.5s;
 }
 
-.our-portfolio .hidden-content:after {
+.devmethod .hidden-content:after {
   width: 20px;
   height: 20px;
   position: absolute;
-  background: rgb(255,77,30);
+  background: var(--secondary-color);
   content: '';
   left: 50%;
   bottom: -8px;
@@ -1163,18 +1383,18 @@ Portfolio
   z-index: -1;
 }
 
-.our-portfolio .hidden-content h4 {
+.devmethod .hidden-content h4 {
   font-size: 20px;
   font-weight: var(--fw-bold);
   color: #fff;
   margin-bottom: 20px;
 }
 
-.our-portfolio .hidden-content p {
+.devmethod .hidden-content p {
   color: #fff;
 }
 
-.our-portfolio .showed-content {
+.devmethod .showed-content {
   top: 0px;
   position: relative;
   z-index: 3;
@@ -1186,7 +1406,7 @@ Portfolio
   transition: all 0.5s;
 }
 
-.our-portfolio .showed-content img {
+.devmethod .showed-content img {
   max-width: 100px;
 }
 
@@ -1444,6 +1664,33 @@ form#contact button:hover {
 
 /* 
 ---------------------------------------------
+Whatsapp Contents Style
+--------------------------------------------- 
+*/
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* 
+---------------------------------------------
 CONTENTS/COMPONENTS Style
 --------------------------------------------- 
 */
@@ -1489,9 +1736,11 @@ Clients Moving Content Style
 }
 
 .logo-slider img {
-  height: 100px;
+  height: 40px;
   object-fit: contain;
   transition: transform 0.3s ease;
+  width: auto;                /* Biarkan lebar menyesuaikan agar tidak gepeng */
+  display: block;
 }
 
 .logo-slider img:hover {
@@ -1516,6 +1765,7 @@ Web Types Content Style
 .services-section {
   text-align: center;
   padding: 60px 20px;
+  /* margin-top: 100px; */
 }
 
 .section-title {
@@ -1565,6 +1815,138 @@ Web Types Content Style
   font-size: 14px;
   color: #6b7280;
 }
+
+/* 
+---------------------------------------------
+Call To Action Content Style
+--------------------------------------------- 
+*/
+.cta-section {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  /* margin-top: 100px; */
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-icon {
+  font-size: 40px;
+  background-color: #e0f0ff;
+  color: #3b82f6;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cta-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.cta-desc {
+  font-size: 16px;
+  /* color: #6b7280; */
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+/* 
+---------------------------------------------
+Call To Action Mini Content Style
+--------------------------------------------- 
+*/
+
+.contact-prompt {
+  background-color: #f9f9ff;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 1100px;
+  width: 100%;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.contact-text p {
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: #03a4ed;
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 24px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0288c9;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .contact-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 
 /* 
 ---------------------------------------------

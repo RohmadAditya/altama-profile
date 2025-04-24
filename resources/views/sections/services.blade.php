@@ -47,6 +47,12 @@
   <!-- ***** Content Area ***** -->
   {{-- services --}}
   @include('contents.services_content')
+  
+  @include('contents.web_types_content')
+
+  @include('contents.clients_moving_content')
+
+  @include('contents.cta_content')
 
 
   <!-- ***** Footer Area ***** -->

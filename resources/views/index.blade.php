@@ -75,19 +75,25 @@
   </div>
 
   {{-- about --}}
-  @include('contents.about_content')
+  {{-- @include('contents.about_content') --}}
 
   {{-- services --}}
   @include('contents.services_content')
 
   {{-- portofolio --}}
-  @include('contents.portfolio_content')
+  @include('contents.devmethod_content')
+
+  @include('contents.cta-mini_content')
 
   {{-- blog --}}
-  @include('contents.blog_content')
+  {{-- @include('contents.blog_content') --}}
 
   {{-- contact --}}
-  @include('contents.contact_content')
+  {{-- @include('contents.contact_content') --}}
+
+  <a href="https://wa.me/6289531656442" class="whatsapp-float" target="_blank" aria-label="Chat via WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+  </a>
 
   <!-- ***** Footer Area Start ***** -->
   <footer>
